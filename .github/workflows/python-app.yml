@@ -39,7 +39,7 @@ jobs:
         pytest --alluredir=allure-results
 
     
-name: Allure Report action from marketplace
+    - name: Allure Report action from marketplace
     uses: simple-elf/allure-report-action@master 
     if: always() 
     with: 
@@ -48,7 +48,7 @@ name: Allure Report action from marketplace
       keep_reports: 20
 
     
-name: Deploy report to Github Pages 
+    - name: Deploy report to Github Pages 
     if: always() 
     uses: peaceiris/actions-gh-pages@v2 
     env: 
