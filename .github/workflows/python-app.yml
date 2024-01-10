@@ -39,7 +39,7 @@ jobs:
         pytest --alluredir=allure-results
 
     
-name: Allure Report action from marketplace 
+name: Allure Report action from marketplace
     uses: simple-elf/allure-report-action@master 
     if: always() 
     with: 
